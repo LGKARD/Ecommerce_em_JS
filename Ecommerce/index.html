@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <section id="carrinho" class="fixed bg-sky-950 top-0 right-[-360px] h-screen w-[360px] duration-200 border-l border-slate-200 p-5 flex flex-col justify-between">
+    <div id="cabecalho-carrinho" class="flex justify-between m-3">
+      <p>Meu carrinho</p>
+      <button id="fechar-carrinho">
+        <i  class="fa-solid fa-circle-xmark"></i>
+      </button>
+    </div>
+    <section id="produtos-carrinho">
+      <article class="flex bg-slate-100 rounded-lg">
+        <img src="./assets/img/ps5.jpg" alt="" class="h-24 rounded-lg">
+        <div>
+          <p class="text-slate-800">nome do produto</p>
+          <p class="text-green-700">preço</p>
+        </div>  
+        
+      </article>
+      <div>
+        <p>2</p>
+        <p>3</p>
+      </div>
+    </section>
+    <p id="preco-total">R$200</p>
+    <button class="bg-slate-200 p-1">finalizar compra</button>
+  </section>
+  <header class="flex bg-sky-950 p-2 justify-between">
+    <i class="fa-solid fa-gamepad text-slate-200 text-7xl"></i>
+    <div class="text-slate-200 flex gap-2">
+      <button><i class="fa-solid fa-user"></i></button>
+      <button id="abrir-carrinho"><i class="fa-solid fa-cart-shopping"></i></button>
+    </div>
+  </header>
+  <main>
+    <section id="container-produto" class="flex flex-wrap">
+      
+    </section>
+  </main>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
